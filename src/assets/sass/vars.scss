@@ -1,0 +1,29 @@
+/*Colors*/
+$white: #fff;
+$black: #000;
+$gray: lighten($black, 60%);
+$pink: #d80049;
+$olive: #9e946c;
+
+/*Img path*/
+$img_path: "../img/";
+
+/*Bootstrap Modal*/
+$modal-backdrop-bg: #0a1630;
+$modal-backdrop-opacity: .9;
+
+/*Bootstrap Grid*/
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1400px
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1430px
+);

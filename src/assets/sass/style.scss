@@ -1,0 +1,67 @@
+@import "vars";
+
+
+/* Default styles */
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Comfortaa', cursive;
+    color: $black;
+    font-size: 1rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.page {
+    overflow: hidden;
+}
+
+/*Bootstrap*/
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/modal";
+@import "../../../node_modules/bootstrap/scss/transitions";
+
+
+
+/*Vendor libs*/
+@import "vendor/bootstrap/bootstrap";
+@import "vendor/slick/slick";
+
+
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/language";
+@import "blocks/social";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/features";
+@import "blocks/works";
+@import "blocks/partners";
+@import "blocks/request";
+@import "blocks/form";
+@import "blocks/navigation";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/nav-toggle";

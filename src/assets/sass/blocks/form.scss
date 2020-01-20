@@ -1,0 +1,99 @@
+.form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: inherit;
+}
+
+.form__input,
+.form__textarea {
+    width: 360px;
+    height: 50px;
+    padding: 12px 25px;
+
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: $gray;
+
+    background: transparent;
+    border: 1px solid $gray;
+
+    position: relative;
+    z-index: 3;
+
+    &:focus {
+        color: $white;
+
+        outline: 0;
+        border-color: $white;
+    }
+
+    &--modal:focus {
+        color: $gray;
+
+        border-color: $gray;
+    }
+}
+
+.form__textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+.form__container {
+    width: 360px;
+    height: 50px;
+    margin-bottom: 20px;
+
+    position: relative;
+}
+
+.form__container--textarea {
+    height: 130px;
+}
+
+.focus:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid $white;
+
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    z-index: 1;
+
+    opacity: 0;
+
+    transition: opacity .1s linear;
+}
+
+.form__container.focus:before {
+    opacity: 1;
+}
+
+.focus--modal:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid $gray;
+
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    z-index: 1;
+
+    opacity: 0;
+
+    transition: opacity .1s linear;
+}
+
+.form__container--modal.focus--modal:before {
+    opacity: 1;
+}

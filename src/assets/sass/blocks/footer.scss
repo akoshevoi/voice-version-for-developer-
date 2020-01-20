@@ -1,0 +1,30 @@
+.footer {
+    padding: 25px 0;
+
+    background: #262226;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__rights {
+    font-size: .8rem;
+    font-weight: 300;
+    color: $gray;
+}
+
+.footer__made {
+    display: flex;
+    align-items: center;
+}
+
+.footer__author {
+    color: $white;
+}
+
+.footer__icon {
+    margin-left: 15px;
+}

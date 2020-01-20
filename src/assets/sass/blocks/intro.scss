@@ -1,0 +1,60 @@
+.intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #010409 url("#{$img_path}intro/intro-bg.jpg") center no-repeat; 
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+    color: $white;
+    text-align: center;
+}
+
+.intro__icon {
+    margin: 0 auto;
+}
+
+.intro__title {
+    margin: 15px 0;
+    font-size: 3.4rem; 
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.intro__title-special {
+    color: $olive;
+}
+
+.intro__subtitle {
+    margin-bottom: 40px;
+
+    font-size: 1.2rem;
+}
+
+
+
+/*Media*/
+/*Max-width: 575px*/
+@media(max-width: 575px) {
+    .intro__title {
+        font-size: 3rem;
+    }
+
+    .intro__subtitle {
+        font-size: 1rem;
+    }
+}
+
+/*Max-width: 470px*/
+@media(max-width: 470px) {
+    .intro__title {
+        font-size: 2.7rem;
+    }
+}

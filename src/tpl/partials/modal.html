@@ -1,0 +1,32 @@
+<!-- Modal -->
+<div class="modal fade" id="request-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+                <svg class="modal__close-icon">
+                    <use xlink:href="#modal-close"></use>
+                </svg>
+            </button>
+            <form action="/" method="post" class="form">
+                <div class="form__container  form__container--modal">
+                    <input class="form__input  form__input--modal" type="text" placeholder="Name"
+                        data-modal="modal-item-1">
+                </div>
+                <div class="form__container  form__container--modal">
+                    <input class="form__input  form__input--modal" type="tel" placeholder="Phone"
+                        data-modal="modal-item-1">
+                </div>
+                <div class="form__container  form__container--modal">
+                    <input class="form__input  form__input--modal" type="email" placeholder="E-mail"
+                        data-modal="modal-item-1">
+                </div>
+                <div class="form__container  form__container--modal  form__container--textarea">
+                    <textarea class="form__textarea  form__textarea--modal" name="" id="" cols="30" rows="10"
+                        placeholder="Comment" data-modal="modal-item-1"></textarea>
+                </div>
+                <button class="btn" type="submit">Leave a request</button>
+            </form>
+        </div>
+    </div>
+</div>
